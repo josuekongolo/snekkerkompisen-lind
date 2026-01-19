@@ -1,0 +1,366 @@
+/* ============================================
+   Snekkerkompisen Lind - Responsive Styles
+   ============================================ */
+
+/* Tablet - 768px+ */
+@media screen and (min-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Service Area */
+    .area-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+    }
+}
+
+/* Desktop - 1024px+ */
+@media screen and (min-width: 1024px) {
+    /* Header & Navigation */
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .header-cta {
+        display: block;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero-image {
+        display: block;
+    }
+
+    .hero-content {
+        max-width: 550px;
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+
+    /* Service Detail */
+    .service-detail-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+}
+
+/* Large Desktop - 1200px+ */
+@media screen and (min-width: 1200px) {
+    /* Typography */
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1.25rem;
+    }
+
+    /* Increased spacing */
+    .section {
+        padding: var(--spacing-xxl) 0;
+    }
+}
+
+/* Small Mobile - 480px and below */
+@media screen and (max-width: 480px) {
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-badge {
+        font-size: 0.8125rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+
+    /* CTA Buttons */
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+
+    /* Service Cards */
+    .service-card {
+        padding: var(--spacing-md);
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Feature Items */
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-icon {
+        margin: 0 auto;
+    }
+
+    /* Contact Methods */
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Pricing */
+    .pricing-item {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    /* Trust Box */
+    .trust-box {
+        padding: var(--spacing-md);
+    }
+
+    /* Quick Contact */
+    .quick-contact-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Contact Form */
+    .contact-form-wrapper {
+        padding: var(--spacing-md);
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: calc(var(--spacing-xl) + 70px) 0 var(--spacing-lg);
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+}
+
+/* Hover States - Touch Devices */
+@media (hover: none) and (pointer: coarse) {
+    .service-card:hover,
+    .feature-item:hover,
+    .contact-method:hover {
+        transform: none;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .cta-section,
+    .menu-toggle,
+    .mobile-nav,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 20px 0;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --color-primary: #1a3009;
+        --color-text: #000000;
+        --color-border: #000000;
+    }
+
+    .btn {
+        border: 2px solid currentColor;
+    }
+
+    .service-card,
+    .feature-item,
+    .value-card,
+    .contact-method {
+        border: 2px solid var(--color-text);
+    }
+}
+
+/* Dark Mode Support (Future) */
+@media (prefers-color-scheme: dark) {
+    /*
+    Placeholder for dark mode styles if needed in the future.
+    Currently, the brand uses light, warm colors that should remain
+    consistent with the "Snekkerkompisen" friendly brand identity.
+    */
+}
